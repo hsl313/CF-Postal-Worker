@@ -1,0 +1,15 @@
+name = "cf-postal-worker"
+compatibility_date = "2023-01-01"
+send_email = [
+    {type = "send_email", name = "SEB"}
+]
+
+[vars]
+# SENDER_ADDRESS = ""
+# SENDER_NAME = ""
+# RECIPIENT_ADDRESS = ""
+# ALLOWED_ORIGINS = "*"
+SENDER_ADDRESS = "sender@aspx.tw.cn" # Set it to the email address you configured in Email Routing
+SENDER_NAME = "Sender" # Sender's name
+RECIPIENT_ADDRESS = "recipient@aspx.tw.cnm" # Set it to your recipient email address
+ALLOWED_ORIGINS = "https://aspx.tw.cn" # The domain name of the site allowed to call the API, multiple domain names are separated by commas, "*" means all domain names are allowed.
